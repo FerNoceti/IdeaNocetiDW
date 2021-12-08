@@ -273,6 +273,7 @@ a:active{
 
 .contacto__label{
     margin-left: 7px;
+    padding-right: 50%;
     font-size: 1.4rem;
     text-align: left; 
  }
@@ -280,8 +281,8 @@ a:active{
  .contacto__input{
     color: black;
     background-color: rgb(202, 202, 202);
-    margin-left: 1px;
-    width: 100%;
+    margin-left: 5%;
+    width: 90%;
 }
 
 .contacto__msj{
@@ -538,18 +539,12 @@ a:active{
     }
 
     /*header*/
-    body{
-        margin-top: 80px;
-    }
-    
-    
+
     .header{
         background: rgb(76,201,240);
         background: linear-gradient(90deg, rgba(76,201,240,1) 0%, rgba(86,11,173,1) 100%);
         flex-direction: row;
         justify-content: space-between;
-        position: fixed;
-        top: 0;
         width: 100%;
         height: 80px;
     }
@@ -782,3 +777,20 @@ a:active{
     }
 
 }
+
+/*Animaciones*/
+
+.header__logo:hover{
+    transform:scale(1.2, 1.2)
+}
+
+.contacto__input{
+    transition: all 1s;
+}
+
+.contacto__input:focus {
+    margin-left: 0%;
+    width: 100%;
+    font-size: 1rem;
+ }
+ 

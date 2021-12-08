@@ -7,6 +7,7 @@
     <title>Equipo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="container--equipo">
     <div class="container__header">
@@ -35,7 +36,7 @@
                 </p>
             <br><br>
             </div>
-            <div class="equipo">
+            <div class="equipo" data-aos="fade-right">
                 <div class="equipo__contenedor">
                     <img class="equipo__imagen" src="../img/equipo/equipo1.jpg" alt="Equipo 1">
                 </div>
@@ -43,7 +44,7 @@
                     <p class="equipo__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores praesentium odio rem deserunt ipsum incidunt, quis obcaecati quod, iste quia architecto error laborum explicabo maxime est cumque ex atque adipisci!</p>
                 </div>
             </div>
-            <div class="equipo equipo--reves">
+            <div class="equipo equipo--reves" data-aos="fade-left">
                 <div class="equipo__contenedor">
                     <img class="equipo__imagenLOGO"src="../img/equipo/equipo2.png" alt="Equipo 2">
                 </div>
@@ -51,7 +52,7 @@
                     <p class="equipo__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci est. Impedit consectetur quas hic laborum voluptate quaerat suscipit porro molestiae id pariatur! Voluptates debitis rerum ad soluta sequi vel?</p>
                 </div>
             </div>
-            <div class="equipo">
+            <div class="equipo" data-aos="fade-right">
                 <div class="equipo__contenedor">
                     <img class="equipo__imagen" src="../img/equipo/equipo3.jpg" alt="Equipo 3">
                 </div>
@@ -86,5 +87,9 @@
             </div>
         </footer>
     </div>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
 </body>
 </html>
