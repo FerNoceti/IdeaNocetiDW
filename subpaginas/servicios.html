@@ -7,6 +7,7 @@
     <title>Servicios</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="container--servicios">
     <div class="container__header">
@@ -28,11 +29,11 @@
     </div>
     <div class="container__servicios">
         <section class="servicios">
-            <div class="servicios__contenedor">
+            <div class="servicios__contenedor" data-aos="fade-down-right">
                 <h1 class="servicios__titulo">Nuestros Servicios</h1>
                 <p class="servicios__parrafo">Lorem ipsum dolor sit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur eos dolores nemo dignissimos officia earum at deleniti. Earum amet sed culpa, illo dolorum explicabo porro quod eligendi qui ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia eum harum eaque itaque animi facilis inventore rerum dolore, soluta suscipit, fuga nihil! Maxime quibusdam delectus velit quod veniam perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, at vitae suscipit quaerat sit explicabo deserunt, a nihil iure facilis placeat dolorem maiores et aspernatur similique laboriosam delectus harum fugiat? amet consectetur adipisicing elit. Illum veniam omnis iusto, dignissimos, voluptatem vitae ex veritatis rerum perspiciatis beatae a! Eveniet harum tempore mollitia quaerat commodi officiis facere quasi!</p>
             </div>
-            <div class="servicios__contenedor">
+            <div class="servicios__contenedor" data-aos="fade-down-left">
                 <iframe class="servicios__video" src="https://www.youtube.com/embed/A88YiZdXugA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
@@ -62,5 +63,9 @@
             </div>
         </footer>
     </div>     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
 </body>
 </html>
