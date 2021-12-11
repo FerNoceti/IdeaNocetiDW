@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
 </head>
 <body class="container--contacto">
     <div class="container__header">
         <header class="header">
             <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt="Logo PORTAL"></a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a href="./servicios.html">Servicios</a></li>
-                    <li class="header__item"><a href="./equipo.html">Equipo</a></li>
-                    <li class="header__item"><a href="./proyectos.html">Proyectos</a></li>
-                    <li class="header__item header__item--activo"><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                            <li><a class="dropdown-item" href="./equipo.html">Equipo</a></li>
+                            <li><a class="dropdown-item" href="./proyectos.html">Proyectos</a></li>
+                            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>  
         </header>
     </div>
     <div class="container__separador--top">
@@ -39,43 +57,39 @@
                     <fieldset>
                         <legend class="contacto__legend">Completa tus datos:</legend><br>
                         <label class="contacto__label" for="user-name">Nombre:</label>
-                        <input class="contacto__input" type="text" name="user-name" placeholder="Ingrese su nombre">
-                        <label class="contacto__label" for="user-surname">Apellido:</label>
-                        <input class="contacto__input" type="text" name="user-surname" placeholder="Ingrese su apellido">
+                        <input class="contacto__input form-control" type="text" name="user-name" placeholder="Ingrese su nombre">
+                        <label class="contacto__label form-group" for="user-surname">Apellido:</label>
+                        <input class="contacto__input form-control" type="text" name="user-surname" placeholder="Ingrese su apellido">
                         <br>
-                        <label class="contacto__label" for="mail">Mail:</label>
-                        <input class="contacto__input" type="text" name="user-mail" placeholder="Ingrese su mail">
+                        <label class="contacto__label form-group" for="mail">Mail:</label>
+                        <input class="contacto__input form-control" type="text" name="user-mail" placeholder="Ingrese su mail">
                         <br><br>
-                        <label class="contacto__label" for="message">Dejanos tu mensaje</label>
+                        <label class="contacto__label form-group" for="message">Dejanos tu mensaje</label>
                         <br><br>
-                        <textarea class="contacto__msj" name="user-message" id="message" cols="30" rows="10"></textarea>
+                        <textarea class="contacto__msj form-control" name="user-message" id="message" cols="30" rows="10"></textarea>
                         <br><br>
-                        <label class="contacto__label" for="user-selection">Como nos conoció:</label>
-                        <select class="contacto__input" name="user-option" id="user-selection">
-                            <option value="op-1">Redes Sociales</option>
-                            <option value="op-2">Boca a boca</option>
-                            <option value="op-3">Publicidad de google</option>
-                        </select>
-                        <br>
-                        <label class="contacto__label" for="user-terms">Acepta condiciones</label>
-                        <input class="contacto__input" type="checkbox" name="user-sec" id="user-terms">
-                        <br><br>
-                        <div class="btn">
-                            <div class="btn__contenedor">
-                                <input class="input" type="submit" value="Enviar">
-                            </div>
-                            <div class="btn__contenedor">
-                                <input class="input" type="reset" value="Limpiar campos">
-                            </div>
-                            <div class="btn__contenedor">
-                                <input class="input" type="button" value="BTN">
-                            </div>
-                            <br><br>
+                        <label class="contacto__label form-group" for="user-selection">Como nos conoció:</label>
+                        <div class="form-group">
+                            <label for="sel1">Como nos conocio:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Redes</option>
+                              <option>Boca a boca</option>
+                              <option>Radio</option>
+                              <option>Ninguno de los anteriores</option>
+                            </select>
+                          </div>
+                        <div class="row btn__contenedor">
+                            <button type="reset" class="btn btn-light">Limpiar Campos</button>
+                            <button type="submit" class="btn btn-light">Enviar</button>
+                            <button type="button" class="btn btn-light">BTN</button>
                         </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Acepta los terminos y condiciones</label>
+                          </div>
+                    </fieldset>
                 </form>
-            </div>                                         
-                </fieldset>         
-            </form>
+            </div>                                      
         </section>
     </div>
     <div class="container__separador--bot">
@@ -103,10 +117,11 @@
             </div>
         </footer>
     </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>  
+    </script>
 </body>
 </html>
 
