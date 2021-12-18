@@ -1,0 +1,45 @@
+/*Header*/
+
+/*Colores*/
+$background: #cfb0ff;
+$color: #2d64ff;
+$colorBorde: blueviolet;
+$colorItemActivo: #dbc7fa;
+$colorItemBackground: #c5a0fd;
+$colorActive: aliceblue;
+
+
+.header {
+    background-color: $background;
+    color: $color;
+    padding: 1% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+  
+  .header__logo {
+    padding: 10px; }
+  
+  .header__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  
+  .header__item {
+    border-bottom: solid 2px colorBorde;
+    margin: 0px 15px;
+    padding: 3px 7px;
+    font-size: 1.3rem; }
+  
+  .header__item--activo {
+    background-color: $colorItemActivo;
+    &:hover {
+      background-color: $colorItemBackground; }
+    a {
+    text-decoration: none;
+      &:active {
+        color: $colorActive; }
+      }
+    }

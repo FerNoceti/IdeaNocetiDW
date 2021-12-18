@@ -1,0 +1,29 @@
+/*proyectos*/
+.proyectos {
+  background-color: #2888f5;
+  color: white;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.proyectos__titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; }
+
+.proyectos__parrafo {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 12px; }
+
+.proyectos__contenedor {
+  flex-basis: 50%; }
+
+.proyectos__video {
+  width: 90%;
+  height: 300px;
+  margin: 5%; }
