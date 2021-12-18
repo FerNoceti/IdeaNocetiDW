@@ -1,0 +1,66 @@
+/*Grilla*/
+/*Grilla index*/
+.container--index {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header header"  "separadorT separadorT separadorT" "hero hero hero" "video video video" "separadorB separadorB separadorB" "footer footer footer"; }
+  
+  /*grid mobile(1,3 iria boton para expandir el menu)*/
+  .container__header {
+    grid-area: header; }
+  
+  .container__separador--top {
+    grid-area: separadorT; }
+  
+  .container__hero {
+    grid-area: hero; }
+  
+  .container__video {
+    grid-area: video; }
+  
+  .container__separador--bot {
+    grid-area: separadorB; }
+  
+  .container__footer {
+    grid-area: footer; }
+
+/*grilla contacto*/
+.container--contacto {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header"  "separadorT separadorT separadorT" "contacto contacto contacto" "separadorB separadorB separadorB" "footer footer footer"; }
+  
+  .container__contacto {
+    grid-area: contacto; }
+
+/*grilla equipo*/
+.container--equipo {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header"  "separadorT separadorT separadorT" "equipo equipo equipo" "separadorB separadorB separadorB" "footer footer footer"; }
+  
+  .container__equipo {
+    grid-area: equipo; }
+  
+/*grilla proyectos*/
+.container--proyectos {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header"  "separadorT separadorT separadorT" "proyectos proyectos proyectos" "separadorB separadorB separadorB" "footer footer footer"; }
+  
+.container__proyectos {
+    grid-area: proyectos; }
+
+  /*grilla servicios*/
+.container--servicios {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header"  "separadorT separadorT separadorT" "servicios servicios servicios" "separadorB separadorB separadorB" "footer footer footer"; }
+
+.container__servicios {
+  grid-area: servicios; }

@@ -1,0 +1,67 @@
+/*contacto*/
+
+/*Color*/
+$backgroundColor: #2888f5;
+$color: black;
+$colorTitulo: white;
+$backgroundContacto: #eee9f6;
+$colorInput: rgb(221, 221, 221);
+
+.contacto {
+    background-color: $backgroundColor;
+    color: $color;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%; }
+  
+  .contacto__contenedor {
+    flex-basis: 50%; }
+  
+  .contacto__titulo {
+    color: $colorTitulo;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 7%; }
+  
+  .contacto__parrafo {
+    color: $colorTitulo;
+    text-align: left;
+    font-size: 1.5rem; }
+  
+  .contacto__form {
+    background-color: $backgroundContacto; }
+  
+  .contacto__legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left; }
+  
+  .contacto__label {
+    margin-left: 7px;
+    padding-right: 50%;
+    font-size: 1.4rem;
+    text-align: left; }
+  
+  .contacto__input {
+    color: black;
+    background-color: $colorInput;
+    margin-left: 5%;
+    width: 90%; }
+  
+  .contacto__msj {
+    background-color: $colorInput;
+    width: 100%; }
+  
+  .btn {
+    padding: 10px px;
+    border-width: 1px;
+    border-radius: 5px;
+    display: flex; }
+  
+  .btn__contenedor {
+    padding: 10px; }
