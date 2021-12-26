@@ -1,12 +1,11 @@
 /*proyectos*/
+
+@import "generales";
+
 .proyectos {
-  background-color: #2888f5;
-  color: white;
-  padding: 10px 0px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  @extend .generales;
+  padding-bottom: 5px;
+}
 
 .proyectos__titulo {
   font-size: 2rem;
