@@ -1,11 +1,10 @@
 /*equipo*/
+@import "generales";
+
 .equipo {
-    background-color: #2888f5;
-    color: white;
-    padding: 10px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
+  @extend .generales;
+  padding-bottom: 3px;
+}
   
   .equipo__titulo {
     font-size: 2rem;

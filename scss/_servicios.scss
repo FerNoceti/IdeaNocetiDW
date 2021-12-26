@@ -1,11 +1,10 @@
 /*servicios*/
+@import "generales";
+
 .servicios {
-    background-color: #2888f5;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column; }
+  @extend .generales;
+  padding-bottom: 6px;
+}
   
   .servicios__titulo {
     font-size: 2rem;

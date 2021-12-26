@@ -1,40 +1,61 @@
 /*Footer*/
 
-$background: #cfb0ff;
-$color: #2d64ff;
+/*map*/
+$footerAtributos: (
+  backgroundColor: #cfb0ff,
+  color: #2d64ff,
+  tituloTamano: 1.3rem,
+  tituloAlineado: left,
+  tituloPeso: bold,
+  tituloMargen: 5px,
+  parrafoTamano: .85rem,
+  parrafoMargen: 3px,
+  listaTamano: .8rem,
+  itemMargen: 3px 5px,
+);
+
+/*mixin*/
+
+@mixin sizes ($width, $height, $margin) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+}
 
 .footer {
-    background-color: $background;
-    color: $color;
+    background-color: map-get($footerAtributos, backgroundColor);
+    color: map-get($footerAtributos, color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 100%; }
+    @include sizes(100%, auto, auto);
+   }
   
   .footer__contenedor {
     flex-basis: auto; }
   
   .footer__titulo {
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: left;
-    margin: 5px; }
+    font-size: map-get($footerAtributos, tituloTamano);
+    font-weight: map-get($footerAtributos, tituloPeso);
+    text-align: map-get($footerAtributos, tituloAlineado);
+    margin: map-get($footerAtributos, tituloMargen);
+   }
   
   .footer__parrafo {
-    margin: 3px;
-    font-size: 0.75rem; }
+    margin:  map-get($footerAtributos, parrafoMargen);
+    font-size:  map-get($footerAtributos, parrafoTamano);
+   }
   
   .footer__list {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    font-size: 0.75rem; }
+    font-size: map-get($footerAtributos, listaTamano); }
   
   .footer__item {
-    margin: 3px 5px; }
+    margin: map-get($footerAtributos, itemMargen); }
   
   .footer__mapa {
-    width: 90%;
-    height: 50%;
-    margin: 5px; }
+    @include sizes(90%, 200px, 5px);
+}
